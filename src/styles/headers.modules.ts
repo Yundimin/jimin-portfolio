@@ -16,12 +16,16 @@ export const NavbarWrapper = styled.div`
   }
 
   .logo {
-    width: 50px;
+    width: 54px;
+    height: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
-    margin-left: 20px;
+    margin: auto 20px;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.07);
+    }
   }
 
   .menu-box {

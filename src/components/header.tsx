@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavbarWrapper } from "../styles/headers.modules";
+import headerLogo from "../assets/header-logo.png";
 
 export function Header() {
   const [selectedItem, setSelectedItem] = useState("Home");
@@ -26,7 +27,7 @@ export function Header() {
     <>
       <NavbarWrapper>
         <div className="nav-box">
-          <div className="logo">my logo</div>
+          <img src={headerLogo} alt="headerLogo" className="logo" />
           <div className="menu-box">
             {menuItems.map((nav, index) => (
               <section id={nav.name}>
