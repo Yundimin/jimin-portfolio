@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const NavbarWrapper = styled.div`
+  position: fixed;
   display: flex;
+  top: 0;
+  z-index: 1000;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
