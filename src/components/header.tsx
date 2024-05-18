@@ -5,22 +5,24 @@ import headerLogo from "../assets/header-logo.png";
 export function Header() {
   const [selectedItem, setSelectedItem] = useState("Home");
 
-  const handleItemClick = (name: string) => {
-    setSelectedItem(name);
-    //     const element = document.getElementById(name);
-    //     if (element) {
-    //       element.scrollIntoView({ behavior: 'smooth' });
-    //     }
+  const handleItemClick = (scrollTo: string) => {
+    const element = document.getElementById(scrollTo.toLowerCase());
+    if (element) {
+      const yOffset = -100; // 위로 100px 이동
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
   };
 
   const menuItems = [
-    { name: "Home", link: "/" },
-    { name: "ABOUT ME", link: "About_me" },
-    { name: "SKILLS", link: "About_me" },
-    { name: "ARCHIVING", link: "About_me" },
-    { name: "PROJECT", link: "About_me" },
-    { name: "HISTORY", link: "About_me" },
-    { name: "CONTACT", link: "About_me" },
+    { name: "Home", scrollTo: "home" },
+    { name: "ABOUT ME", scrollTo: "aboutme" },
+    { name: "SKILLS", scrollTo: "About_me" },
+    { name: "ARCHIVING", scrollTo: "About_me" },
+    { name: "PROJECT", scrollTo: "About_me" },
+    { name: "HISTORY", scrollTo: "About_me" },
+    { name: "CONTACT", scrollTo: "About_me" },
   ];
 
   return (
@@ -29,13 +31,13 @@ export function Header() {
         <div className="nav-box">
           <img src={headerLogo} alt="headerLogo" className="logo" />
           <div className="menu-box">
-            {menuItems.map((nav, index) => (
+            {menuItems.map((nav, scrollTo) => (
               <section id={nav.name}>
                 <div
                   className={
                     nav.name === selectedItem ? "links selected" : "links"
                   }
-                  onClick={() => handleItemClick(nav.name)}
+                  onClick={() => handleItemClick(nav.scrollTo)}
                 >
                   {nav.name}
                 </div>

@@ -16,9 +16,10 @@ export const HomeWrapper = styled.div`
   width: 100%;
   height: 100%;
   background-color: #121212;
+  justify-content: center;
+  align-items: center;
 
   .title-container {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,4 +52,5 @@ export const TitleText = styled.div<{ show: boolean }>`
   white-space: pre-wrap;
   text-align: center;
   margin-top: 20px;
+  font-size: 30px;
 `;

@@ -14,7 +14,7 @@ export function Home() {
 
   const titleInviteText = "Invite to My Portfolio Universe";
   return (
-    <HomeWrapper>
+    <HomeWrapper id="home">
       <div className="title-container">
         <div className="invite-text-box">
           {titleInviteText.split("").map((char, index) => (
