@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Header } from "./components/header";
 import { Home } from "./components/home";
 import { AboutMe } from "./components/aboutMe";
+import { Skills } from "./components/skills";
 
 function App() {
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
@@ -29,6 +30,7 @@ function App() {
       <div style={sectionStyle}>
         <Home />
         <AboutMe />
+        <Skills />
       </div>
     </div>
   );
