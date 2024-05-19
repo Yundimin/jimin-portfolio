@@ -3,9 +3,10 @@ import { NavbarWrapper } from "../styles/headers.modules";
 import headerLogo from "../assets/header-logo.png";
 
 export function Header() {
-  const [selectedItem, setSelectedItem] = useState("Home");
+  const [selectedItem, setSelectedItem] = useState("home");
 
   const handleItemClick = (scrollTo: string) => {
+    setSelectedItem(scrollTo);
     const element = document.getElementById(scrollTo.toLowerCase());
     if (element) {
       const yOffset = -100; // 위로 100px 이동
@@ -35,7 +36,7 @@ export function Header() {
               <section id={nav.name}>
                 <div
                   className={
-                    nav.name === selectedItem ? "links selected" : "links"
+                    nav.scrollTo === selectedItem ? "links selected" : "links"
                   }
                   onClick={() => handleItemClick(nav.scrollTo)}
                 >

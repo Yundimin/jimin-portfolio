@@ -43,7 +43,7 @@ export const TitleInviteText = styled.span<{ delay: number }>`
   font-size: 70px;
 `;
 
-export const TitleText = styled.div<{ show: boolean }>`
+export const TitleText = styled.div`
   display: flex;
   opacity: 0;
   animation: ${revealAnimation} 0.5s ease forwards;
