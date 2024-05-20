@@ -4,7 +4,7 @@ export const SkillsWrapper = styled.div`
   width: auto;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #f7f6ec;
   flex-direction: column;
@@ -13,8 +13,12 @@ export const SkillsWrapper = styled.div`
   .skill-title {
     font-size: 60px;
     font-weight: 700;
+    margin: 60px;
   }
   .skill-subtitle {
+    font-size: 20px;
+    color: #f1c05e;
+    margin: 30px;
   }
   .skill-box {
     width: 1200px;
