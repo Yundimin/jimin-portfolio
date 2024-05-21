@@ -29,6 +29,7 @@ export const SkillsWrapper = styled.div`
     justify-content: space-between;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     flex-direction: column;
+    margin-bottom: 60px;
 
     .front-end-wrapper {
       display: flex;

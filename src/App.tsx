@@ -3,6 +3,7 @@ import { Header } from "./components/header";
 import { Home } from "./components/home";
 import { AboutMe } from "./components/aboutMe";
 import { Skills } from "./components/skills";
+import { Archiving } from "./components/archiving";
 
 function App() {
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
@@ -31,6 +32,7 @@ function App() {
         <Home />
         <AboutMe />
         <Skills />
+        <Archiving />
       </div>
     </div>
   );
