@@ -5,6 +5,7 @@ import { AboutMe } from "./components/aboutMe";
 import { Skills } from "./components/skills";
 import { Archiving } from "./components/archiving";
 import { Project } from "./components/project";
+import { History } from "./components/history";
 
 function App() {
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
@@ -35,6 +36,7 @@ function App() {
         <Skills />
         <Archiving />
         <Project />
+        <History />
       </div>
     </div>
   );
