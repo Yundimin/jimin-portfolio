@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HistoryWrapper = styled.div`
   display: flex;
   width: 100%;
-  height: 1080px;
+  height: 1140px;
   background-color: #fde8e8;
   justify-content: center;
   align-items: center;

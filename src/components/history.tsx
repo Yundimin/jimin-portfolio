@@ -28,6 +28,13 @@ const historyData = [
       "한국공학대학교에서 IT경영 전공과 벤처창업 부전공을 진학하였습니다.",
     src: univImg,
   },
+  {
+    title: "더 자세한 내용은 노션 포트폴리오에 있습니다.",
+    position: "",
+    duration: "",
+    description: "",
+    src: "",
+  },
 ];
 
 export function History() {
@@ -38,9 +45,11 @@ export function History() {
         <div className="history-table-box">
           {historyData.map((item, index) => (
             <div className="history-table" key={index}>
-              <div className="history-img-box">
-                <img src={item.src} alt="img" />
-              </div>
+              {item.src !== "" && (
+                <div className="history-img-box">
+                  <img src={item.src} alt="img" />
+                </div>
+              )}
               <div className="history-text-box">
                 <div className="table-title">{item.title}</div>
                 <div className="table-position">{item.position}</div>
