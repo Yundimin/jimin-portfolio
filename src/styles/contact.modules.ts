@@ -4,7 +4,7 @@ export const ContactWrapper = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  min-height: 1140px;
+  min-height: 1400px;
   background-color: #121212;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,7 @@ export const ContactWrapper = styled.div`
       align-items: center;
 
       .address-title {
-        font-size: 20px;
+        font-size: 28px;
         font-weight: 400;
         text-align: center;
         color: white;
@@ -47,136 +47,130 @@ export const ContactWrapper = styled.div`
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        color: white;
+        margin-top: 20px;
 
         .item-box {
           margin-top: 30px;
           display: flex;
           justify-content: center;
           align-items: center;
+          flex-direction: column;
+          gap: 15px;
 
           img {
-            width: 40px;
-            margin-right: 5px;
+            width: 150px;
+            cursor: pointer;
+          }
+
+          .mail-svg {
+            filter: invert(100%) sepia(0%) saturate(5014%) hue-rotate(137deg)
+              brightness(111%) contrast(108%);
+
+            &:hover {
+              filter: invert(66%) sepia(56%) saturate(435%) hue-rotate(87deg)
+                brightness(93%) contrast(86%);
+            }
+          }
+
+          .git-svg {
+            filter: invert(100%) sepia(0%) saturate(5014%) hue-rotate(137deg)
+              brightness(111%) contrast(108%);
+
+            &:hover {
+              filter: invert(0%) sepia(0%) saturate(7461%) hue-rotate(174deg)
+                brightness(94%) contrast(99%);
+            }
+          }
+
+          .blog-svg {
+            filter: invert(100%) sepia(0%) saturate(5014%) hue-rotate(137deg)
+              brightness(111%) contrast(108%);
+
+            &:hover {
+              filter: invert(44%) sepia(25%) saturate(6451%) hue-rotate(341deg)
+                brightness(106%) contrast(101%);
+            }
+          }
+
+          .clipboard-text {
+            display: flex;
+            font-size: 25px;
+            cursor: pointer;
+            color: white;
+
+            &:hover {
+              color: #008080;
+            }
+
+            img {
+              width: 30px;
+              margin-right: 5px;
+              filter: invert(100%) sepia(0%) saturate(5014%) hue-rotate(137deg)
+                brightness(111%) contrast(108%);
+
+              &:hover {
+                filter: invert(25%) sepia(83%) saturate(2688%)
+                  hue-rotate(164deg) brightness(88%) contrast(103%);
+              }
+            }
           }
 
           .item-text {
             font-size: 30px;
             font-weight: 600;
+            color: white;
           }
         }
 
-        .mail-text {
-          font-size: 20px;
-          margin-top: 20px;
-        }
         a {
-          font-size: 20px;
-          margin-top: 20px;
+          font-size: 25px;
           text-decoration: none;
           color: white;
-        }
-      }
-    }
 
-    .email-box {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: fit-content;
-      border: 1px solid white;
-      border-radius: 20px;
-      padding: 10px;
-      color: white;
-      .name-box {
-        display: flex;
-        flex-direction: column;
-
-        .name-title {
-          font-size: 25px;
-          font-weight: 600;
-          margin: 10px 0;
-        }
-
-        input {
-          padding: 10px;
-          border-radius: 10px;
-          font-size: 20px;
-          margin-bottom: 10px;
-          max-width: 100%;
-
-          &:focus {
-            border-color: white;
-            box-shadow: 0;
-            outline: none;
+          &:hover {
+            color: #008080;
           }
         }
       }
     }
+  }
 
-    .mail-box {
-      display: flex;
-      flex-direction: column;
-
-      .mail-title {
-        font-size: 25px;
-        font-weight: 600;
-        margin: 10px 0;
-      }
-
-      input {
-        padding: 10px;
-        border-radius: 10px;
-        font-size: 20px;
-        margin-bottom: 10px;
-        max-width: 100%;
-
-        &:focus {
-          border-color: white;
-          box-shadow: 0;
-          outline: none;
-        }
-      }
+  @media (max-width: 767px) {
+    .title {
+      font-size: 40px;
     }
 
-    .message-box {
-      display: flex;
-      flex-direction: column;
-
-      .message-title {
-        font-size: 25px;
-        font-weight: 600;
-        margin: 10px 0;
-      }
-
-      textarea {
-        padding: 10px;
-        border-radius: 10px;
-        font-size: 20px;
-        margin-bottom: 10px;
-        height: 400px;
-        max-height: 500px;
-        width: inherit;
-        max-width: 700px;
-
-        &:focus {
-          border-color: white;
-          box-shadow: 0;
-          outline: none;
+    .contact-box {
+      .address-box {
+        .address-title {
+          font-size: 20px;
         }
-      }
-    }
 
-    .submit-button {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      button {
-        font-size: 16px;
-        width: 200px;
-        padding: 15px;
-        background-color: white;
-        border-radius: 10px;
+        .address-item {
+          margin-top: 20px;
+
+          .item-box {
+            margin-top: 30px;
+            gap: 15px;
+
+            .clipboard-text {
+              font-size: 20px;
+
+              img {
+                width: 23px;
+              }
+            }
+
+            img {
+              width: 100px;
+              cursor: pointer;
+            }
+          }
+
+          a {
+            font-size: 20px;
+          }
+        }
       }
     }
   }
