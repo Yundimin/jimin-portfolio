@@ -18,9 +18,10 @@ export const ProjectWrapper = styled.div`
   }
 
   .project-container {
-    width: 1200px;
+    width: 80%;
+    max-width: 1200px;
     height: fit-content;
-    margin-top: 50px;
+    margin: 50px;
     padding: 40px;
     display: flex;
     flex-direction: row;
@@ -50,6 +51,7 @@ export const ProjectWrapper = styled.div`
 
     .project-swiper-container {
       height: 100%;
+      width: 100%;
       padding: 20px;
       display: flex;
       justify-content: center;
@@ -90,7 +92,7 @@ export const ProjectWrapper = styled.div`
       }
 
       .explain-container {
-        width: 40%;
+        width: 100%;
         height: 100%;
         background-color: white;
 
@@ -158,10 +160,90 @@ export const ProjectWrapper = styled.div`
             margin-top: 20px;
             img {
               width: 50px;
+              height: 50px;
               margin-right: 10px;
               transition: transform 0.3s ease-in-out;
               &:hover {
                 transform: scale(1.07);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .title {
+      font-size: 40px;
+    }
+
+    .project-container {
+      gap: 50px;
+
+      .project-title-container {
+        .project-title {
+          font-size: 23px;
+          margin-top: 30px;
+        }
+
+        .project-duration {
+          font-size: 15px;
+          margin-top: 10px;
+        }
+      }
+
+      .project-swiper-container {
+        flex-direction: column;
+        padding: 0;
+
+        .swiper-container {
+          margin-top: 60px;
+          width: 100%;
+        }
+
+        .explain-container {
+          .explain-title {
+            font-size: 18px;
+          }
+
+          .function-box {
+            .function-title {
+              font-size: 18px;
+            }
+
+            ul {
+              li {
+                font-size: 16px;
+              }
+            }
+          }
+          .url-box {
+            .url-title {
+              font-size: 18px;
+            }
+
+            a {
+              font-size: 18px;
+            }
+          }
+          .github-box {
+            .github-title {
+              font-size: 18px;
+            }
+
+            a {
+              font-size: 18px;
+            }
+          }
+          .skills-box {
+            .skills-title {
+              font-size: 18px;
+            }
+            .skills-img {
+              img {
+                width: 50px;
+                height: 50px;
               }
             }
           }

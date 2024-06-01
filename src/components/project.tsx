@@ -9,10 +9,16 @@ import reactImg from "../assets/frontend/React-icon.svg";
 import firebaseImg from "../assets/backend/firebase.png";
 import tsImg from "../assets/frontend/file-type-typescript-official.svg";
 import styledComponentImg from "../assets/frontend/styled-components.png";
+import bootstrap from "../assets/frontend/bootstrap.png";
 import portfolioImg1 from "../assets/portfolio/portfolioImg1.png";
 import portfolioImg2 from "../assets/portfolio/portfolioImg2.png";
 import portfolioImg3 from "../assets/portfolio/portfolioImg3.png";
 import portfolioImg4 from "../assets/portfolio/portfolioImg4.png";
+import postgre from "../assets/backend/postgreSQL.png";
+import prisma from "../assets/backend/prisma.png";
+import graphql from "../assets/backend/graphql.png";
+import node from "../assets/backend/node.png";
+import rn from "../assets/mobileApp/reactNative.png";
 
 const portfolioImages = [
   portfolioImg1,
@@ -21,8 +27,7 @@ const portfolioImages = [
   portfolioImg4,
 ];
 
-const portfolioText1 = "포트폴리오 용도로 제작한 웹사이트입니다.";
-const portfolioText2 = "포트폴리오 용도로 제작한 웹사이트입니다.";
+const portfolioText = "포트폴리오 용도로 제작한 웹사이트입니다.";
 const InstaCloneText = "강의를 통한 인스타그램 클론 앱";
 
 export function Project() {
@@ -36,12 +41,11 @@ export function Project() {
         </div>
         <div className="project-swiper-container">
           <div className="explain-container">
-            <div className="explain-title">{portfolioText1}</div>
+            <div className="explain-title">{portfolioText}</div>
             <div className="function-box">
               <div className="function-title">주요 기능</div>
               <ul>
                 <li>반응형 웹페이지</li>
-                <li>이메일 전송 기능</li>
                 <li>Swiper 라이브러리 적용</li>
               </ul>
             </div>
@@ -61,11 +65,11 @@ export function Project() {
               <div className="github-title">GitHub</div>
               <p>
                 <a
-                  href="https://jminn.tistory.com"
+                  href="https://github.com/Yundimin/jimin-portfolio"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://jminn.tistory.com
+                  https://github.com/Yundimin/jimin-portfolio
                 </a>
               </p>
             </div>
@@ -75,7 +79,6 @@ export function Project() {
                 <img src={reactImg} alt="reactImg" />
                 <img src={tsImg} alt="tsImg" />
                 <img src={styledComponentImg} alt="styledComponentImg" />
-                <img src={firebaseImg} alt="firebaseImg" />
               </div>
             </div>
           </div>
@@ -107,12 +110,12 @@ export function Project() {
         </div>
         <div className="project-swiper-container">
           <div className="explain-container">
-            <div className="explain-title">{portfolioText1}</div>
+            <div className="explain-title">{portfolioText}</div>
             <div className="function-box">
               <div className="function-title">주요 기능</div>
               <ul>
                 <li>반응형 웹페이지</li>
-                <li>이메일 전송 기능</li>
+                <li>Bootstrap 라이브러리 적용</li>
                 <li>Swiper 라이브러리 적용</li>
               </ul>
             </div>
@@ -132,11 +135,11 @@ export function Project() {
               <div className="github-title">GitHub</div>
               <p>
                 <a
-                  href="https://jminn.tistory.com"
+                  href="https://github.com/Yundimin/my-portfolio/tree/master"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://jminn.tistory.com
+                  https://github.com/Yundimin/my-portfolio/tree/master
                 </a>
               </p>
             </div>
@@ -145,6 +148,7 @@ export function Project() {
               <div className="skills-img">
                 <img src={reactImg} alt="reactImg" />
                 <img src={tsImg} alt="tsImg" />
+                <img src={bootstrap} alt="bootstrapImg" />
                 <img src={styledComponentImg} alt="styledComponentImg" />
                 <img src={firebaseImg} alt="firebaseImg" />
               </div>
@@ -195,17 +199,18 @@ export function Project() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://jminn.tistory.com
+                  https://github.com/Yundimin/instaclone-native/tree/master
                 </a>
               </p>
             </div>
             <div className="skills-box">
               <div className="skills-title">기술 스택</div>
               <div className="skills-img">
-                <img src={reactImg} alt="reactImg" />
-                <img src={tsImg} alt="tsImg" />
-                <img src={styledComponentImg} alt="styledComponentImg" />
-                <img src={firebaseImg} alt="firebaseImg" />
+                <img src={rn} alt="rnImg" />
+                <img src={node} alt="nodeImg" />
+                <img src={prisma} alt="prismaImg" />
+                <img src={graphql} alt="graphqlImg" />
+                <img src={postgre} alt="postgreImg" />
               </div>
             </div>
           </div>

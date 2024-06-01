@@ -85,11 +85,35 @@ export const HistoryWrapper = styled.div`
         margin: 20px;
       }
     }
+  }
 
-    @media (max-width: 767px) {
+  @media (max-width: 767px) {
+    .title {
+      font-size: 40px;
+    }
+
+    .history-container {
       .history-table-box {
         .history-table {
           flex-direction: column;
+
+          .history-text-box {
+            .table-title {
+              font-size: 20px;
+              margin-bottom: 20px;
+            }
+            .table-position {
+              font-size: 18px;
+              margin-bottom: 20px;
+            }
+            .table-duration {
+              margin-bottom: 20px;
+            }
+            .table-description {
+              font-size: 18px;
+              line-height: 30px;
+            }
+          }
 
           .history-img-box {
             margin-right: 0;
@@ -100,6 +124,10 @@ export const HistoryWrapper = styled.div`
               height: 53px;
             }
           }
+        }
+
+        .more-info {
+          font-size: 18px;
         }
       }
     }
