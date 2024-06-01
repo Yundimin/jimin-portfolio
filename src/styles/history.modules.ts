@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const HistoryWrapper = styled.div`
   display: flex;
   width: 100%;
-  height: 1140px;
+  height: 100%;
+  min-height: 1400px;
   background-color: #fde8e8;
   justify-content: center;
   align-items: center;
@@ -19,7 +20,6 @@ export const HistoryWrapper = styled.div`
   .history-container {
     width: 90%;
     border-top: 4px solid #333333;
-    border-radius: 5px;
     display: flex;
     margin-bottom: 100px;
     align-items: center;
@@ -29,7 +29,7 @@ export const HistoryWrapper = styled.div`
       width: 900px;
       height: fit-content;
       margin-top: 40px;
-      border-left: 4px solid #5d4037;
+
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -74,6 +74,31 @@ export const HistoryWrapper = styled.div`
           .table-description {
             font-size: 18px;
             margin-bottom: 20px;
+            line-height: 30px;
+          }
+        }
+      }
+
+      .more-info {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 20px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .history-table-box {
+        .history-table {
+          flex-direction: column;
+
+          .history-img-box {
+            margin-right: 0;
+            margin-bottom: 50px;
+
+            img {
+              width: 200px;
+              height: 53px;
+            }
           }
         }
       }

@@ -9,7 +9,7 @@ const historyData = [
     position: "70% Frontend, 30% Backend",
     duration: "2022.11 ~ 현재",
     description:
-      "주식회사 TOONSQURE 개발팀에서 웹 프론트엔드,백엔드 작업을 하고 있습니다.",
+      "주식회사 TOONSQURE 개발팀에서 웹 프론트엔드,백엔드 작업을 하고 있습니다. \n Angular, Typescript, Ionic, Graphql 등을 사용했습니다.",
     src: toonsImg,
   },
   {
@@ -27,13 +27,6 @@ const historyData = [
     description:
       "한국공학대학교에서 IT경영 전공과 벤처창업 부전공을 진학하였습니다.",
     src: univImg,
-  },
-  {
-    title: "더 자세한 내용은 노션 포트폴리오에 있습니다.",
-    position: "",
-    duration: "",
-    description: "",
-    src: "",
   },
 ];
 
@@ -58,6 +51,9 @@ export function History() {
               </div>
             </div>
           ))}
+          <div className="more-info">
+            더 자세한 내용은 노션 포트폴리오에 있습니다.
+          </div>
         </div>
       </div>
     </HistoryWrapper>
