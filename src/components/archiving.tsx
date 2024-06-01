@@ -10,15 +10,15 @@ export function Archiving() {
       <div className="archiving-container">
         <div className="github-container">
           <img src={githubImg} alt="github"></img>
-          <p>
-            <a
-              href="https://github.com/yundimin"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://github.com/yundimin
-            </a>
-          </p>
+
+          <a
+            href="https://github.com/yundimin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://github.com/yundimin
+          </a>
+
           <div className="github-title">소스 코드 저장소입니다.</div>
 
           <ul className="archiving-list">
@@ -64,7 +64,7 @@ export function Archiving() {
         </div>
         <div className="portfolio-text-box">
           <div className="portfolio-text">
-            클릭 시 포트폴리오 PDF파일로 이동합니다.
+            클릭 시 포트폴리오 노션 페이지로 이동합니다.
           </div>
           <div className="portfolio-text">
             이력서를 보완하기 위해 작성한 포트폴리오입니다.
