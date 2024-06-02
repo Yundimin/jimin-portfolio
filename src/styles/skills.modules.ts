@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const SkillsWrapper = styled.div`
   width: auto;
   height: 100%;
+  min-height: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f7f6ec;
   flex-direction: column;
-  padding: 80px;
+  padding: 20px;
 
   .skill-title {
     font-size: 60px;
@@ -243,6 +244,86 @@ export const SkillsWrapper = styled.div`
         transition: transform 0.3s ease-in-out;
         &:hover {
           transform: scale(1.07);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .skill-title {
+      font-size: 40px;
+      margin: 30px;
+    }
+
+    .skill-subtitle {
+      font-size: 18px;
+    }
+
+    .skill-box {
+      max-width: 100%;
+      .front-end-wrapper {
+        .front-end-title {
+          font-size: 20px;
+        }
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      .back-end-wrapper {
+        .back-end-title {
+          font-size: 20px;
+        }
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      .tool-wrapper {
+        .tool-title {
+          font-size: 20px;
+        }
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      .community-wrapper {
+        .community-title {
+          font-size: 20px;
+        }
+
+        img {
+          width: fit-content;
+          height: 45px;
+        }
+      }
+
+      .mobile-wrapper {
+        .mobile-title {
+          font-size: 20px;
+        }
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      .deployment-wrapper {
+        .deployment-title {
+          font-size: 20px;
+        }
+
+        img {
+          width: fit-content;
+          height: 45px;
         }
       }
     }
