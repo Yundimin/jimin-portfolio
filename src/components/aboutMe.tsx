@@ -12,17 +12,19 @@ const text5 = "함께 혁신적인 프로젝트를 만들어 나가는 것을 �
 export function AboutMe() {
   return (
     <AboutMeWrapper id="aboutme">
-      <div className="image-container">
-        <img src={aboutMe} alt="aboutMe.jpeg"></img>
-      </div>
-      <div className="text-container">
-        <div className="text-title">ABOUT ME</div>
-        <div className="text-box">
-          <div className="text-explain">{text1}</div>
-          <div className="text-explain">{text2}</div>
-          <div className="text-explain">{text3}</div>
-          <div className="text-explain">{text4}</div>
-          <div className="text-explain">{text5}</div>
+      <div className="img-text-container">
+        <div className="image-container">
+          <img src={aboutMe} alt="aboutMe.jpeg"></img>
+        </div>
+        <div className="text-container">
+          <div className="text-title">ABOUT ME</div>
+          <div className="text-box">
+            <div className="text-explain">{text1}</div>
+            <div className="text-explain">{text2}</div>
+            <div className="text-explain">{text3}</div>
+            <div className="text-explain">{text4}</div>
+            <div className="text-explain">{text5}</div>
+          </div>
         </div>
       </div>
     </AboutMeWrapper>
