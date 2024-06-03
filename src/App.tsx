@@ -7,6 +7,7 @@ import { Archiving } from "./components/archiving";
 import { Project } from "./components/project";
 import { History } from "./components/history";
 import { Contact } from "./components/contact";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
@@ -40,6 +41,7 @@ function App() {
         <History />
         <Contact />
       </div>
+      <ScrollToTop />
     </div>
   );
 }

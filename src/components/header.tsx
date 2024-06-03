@@ -26,7 +26,7 @@ export function Header() {
         element.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
-    setIsMenuOpen(false); // 메뉴 항목 클릭 시 메뉴 닫기
+    setIsMenuOpen(false);
   };
 
   const handleScroll = () => {
