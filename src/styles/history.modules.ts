@@ -88,6 +88,7 @@ export const HistoryWrapper = styled.div`
   }
 
   @media (max-width: 767px) {
+    height: fit-content;
     .title {
       font-size: 40px;
     }

@@ -103,153 +103,159 @@ export const SkillsWrapper = styled.div`
         }
       }
     }
-
-    .tool-wrapper {
+    .tool-community-box {
       display: flex;
-      border: 1px solid #ededed;
-      padding: 20px;
-      margin: 10px;
-      width: fit-content;
-      height: fit-content;
-      flex-direction: column;
-      border-radius: 10px;
-
-      .tool-title {
-        font-size: 35px;
-        font-weight: 600;
-        color: #f1c05e;
-        margin-bottom: 20px;
-        text-decoration: underline;
-      }
-
-      .tool-img-box {
-        width: 100%;
-        height: fit-content;
+      .tool-wrapper {
         display: flex;
-        flex-wrap: wrap;
-      }
-
-      img {
-        width: 75px;
-        height: 75px;
-        margin: 5px;
-        transition: transform 0.3s ease-in-out;
-        &:hover {
-          transform: scale(1.07);
-        }
-      }
-    }
-
-    .community-wrapper {
-      display: flex;
-      border: 1px solid #ededed;
-      padding: 20px;
-      margin: 10px;
-      width: fit-content;
-      height: fit-content;
-      flex-direction: column;
-      border-radius: 10px;
-
-      .community-title {
-        font-size: 35px;
-        font-weight: 600;
-        color: #f1c05e;
-        margin-bottom: 20px;
-        text-decoration: underline;
-      }
-
-      .community-img-box {
-        width: 100%;
-        height: fit-content;
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      img {
+        border: 1px solid #ededed;
+        padding: 20px;
+        margin: 10px;
         width: fit-content;
-        height: 75px;
-        margin: 5px;
-        transition: transform 0.3s ease-in-out;
-        &:hover {
-          transform: scale(1.07);
+        height: fit-content;
+        flex-direction: column;
+        border-radius: 10px;
+
+        .tool-title {
+          font-size: 35px;
+          font-weight: 600;
+          color: #f1c05e;
+          margin-bottom: 20px;
+          text-decoration: underline;
+        }
+
+        .tool-img-box {
+          width: 100%;
+          height: fit-content;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        img {
+          width: 75px;
+          height: 75px;
+          margin: 5px;
+          transition: transform 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.07);
+          }
         }
       }
-    }
 
-    .mobile-wrapper {
-      display: flex;
-      border: 1px solid #ededed;
-      padding: 20px;
-      margin: 10px;
-      width: fit-content;
-      height: fit-content;
-      flex-direction: column;
-      border-radius: 10px;
-
-      .mobile-title {
-        font-size: 35px;
-        font-weight: 600;
-        color: #f1c05e;
-        margin-bottom: 20px;
-        text-decoration: underline;
-      }
-
-      .mobile-img-box {
-        width: 100%;
-        height: fit-content;
+      .community-wrapper {
         display: flex;
-        flex-wrap: wrap;
-      }
-
-      img {
-        width: 75px;
-        height: 75px;
-        margin: 5px;
-        transition: transform 0.3s ease-in-out;
-        &:hover {
-          transform: scale(1.07);
-        }
-      }
-    }
-
-    .deployment-wrapper {
-      display: flex;
-      border: 1px solid #ededed;
-      padding: 20px;
-      margin: 10px;
-      width: fit-content;
-      height: fit-content;
-      flex-direction: column;
-      border-radius: 10px;
-
-      .deployment-title {
-        font-size: 35px;
-        font-weight: 600;
-        color: #f1c05e;
-        margin-bottom: 20px;
-        text-decoration: underline;
-      }
-
-      .deployment-img-box {
-        width: 100%;
-        height: fit-content;
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      img {
+        border: 1px solid #ededed;
+        padding: 20px;
+        margin: 10px;
         width: fit-content;
-        height: 75px;
-        margin: 5px;
-        transition: transform 0.3s ease-in-out;
-        &:hover {
-          transform: scale(1.07);
+        height: fit-content;
+        flex-direction: column;
+        border-radius: 10px;
+
+        .community-title {
+          font-size: 35px;
+          font-weight: 600;
+          color: #f1c05e;
+          margin-bottom: 20px;
+          text-decoration: underline;
+        }
+
+        .community-img-box {
+          width: 100%;
+          height: fit-content;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        img {
+          width: fit-content;
+          height: 75px;
+          margin: 5px;
+          transition: transform 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.07);
+          }
+        }
+      }
+    }
+
+    .mobile-deployment-box {
+      display: flex;
+      .mobile-wrapper {
+        display: flex;
+        border: 1px solid #ededed;
+        padding: 20px;
+        margin: 10px;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+        border-radius: 10px;
+
+        .mobile-title {
+          font-size: 35px;
+          font-weight: 600;
+          color: #f1c05e;
+          margin-bottom: 20px;
+          text-decoration: underline;
+        }
+
+        .mobile-img-box {
+          width: 100%;
+          height: fit-content;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        img {
+          width: 75px;
+          height: 75px;
+          margin: 5px;
+          transition: transform 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.07);
+          }
+        }
+      }
+
+      .deployment-wrapper {
+        display: flex;
+        border: 1px solid #ededed;
+        padding: 20px;
+        margin: 10px;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: column;
+        border-radius: 10px;
+
+        .deployment-title {
+          font-size: 35px;
+          font-weight: 600;
+          color: #f1c05e;
+          margin-bottom: 20px;
+          text-decoration: underline;
+        }
+
+        .deployment-img-box {
+          width: 100%;
+          height: fit-content;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        img {
+          width: fit-content;
+          height: 75px;
+          margin: 5px;
+          transition: transform 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.07);
+          }
         }
       }
     }
   }
 
   @media (max-width: 767px) {
+    min-height: 1600px;
     .skill-title {
       font-size: 40px;
       margin: 30px;
@@ -282,48 +288,108 @@ export const SkillsWrapper = styled.div`
           height: 45px;
         }
       }
+      .tool-community-box {
+        .tool-wrapper {
+          .tool-title {
+            font-size: 20px;
+          }
 
-      .tool-wrapper {
-        .tool-title {
-          font-size: 20px;
+          img {
+            width: 45px;
+            height: 45px;
+          }
         }
 
-        img {
-          width: 45px;
-          height: 45px;
-        }
-      }
+        .community-wrapper {
+          .community-title {
+            font-size: 20px;
+          }
 
-      .community-wrapper {
-        .community-title {
-          font-size: 20px;
-        }
-
-        img {
-          width: fit-content;
-          height: 45px;
-        }
-      }
-
-      .mobile-wrapper {
-        .mobile-title {
-          font-size: 20px;
-        }
-
-        img {
-          width: 45px;
-          height: 45px;
+          img {
+            width: fit-content;
+            height: 45px;
+          }
         }
       }
+      .mobile-deployment-box {
+        .mobile-wrapper {
+          .mobile-title {
+            font-size: 20px;
+          }
 
-      .deployment-wrapper {
-        .deployment-title {
-          font-size: 20px;
+          img {
+            width: 45px;
+            height: 45px;
+          }
         }
 
-        img {
-          width: fit-content;
-          height: 45px;
+        .deployment-wrapper {
+          .deployment-title {
+            font-size: 20px;
+          }
+
+          img {
+            width: fit-content;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 365px) {
+    .skill-box {
+      .tool-community-box {
+        flex-direction: column;
+        .tool-wrapper {
+          .tool-title {
+            font-size: 20px;
+          }
+
+          img {
+            width: 45px;
+            height: 45px;
+          }
+        }
+
+        .community-wrapper {
+          display: flex;
+          .community-title {
+            font-size: 20px;
+          }
+
+          .community-img-box {
+            flex-direction: column;
+          }
+
+          img {
+            width: fit-content;
+            height: 45px;
+          }
+        }
+      }
+      .mobile-deployment-box {
+        flex-direction: column;
+        .mobile-wrapper {
+          .mobile-title {
+            font-size: 20px;
+          }
+
+          img {
+            width: 45px;
+            height: 45px;
+          }
+        }
+
+        .deployment-wrapper {
+          .deployment-title {
+            font-size: 20px;
+          }
+
+          img {
+            width: fit-content;
+            height: 45px;
+          }
         }
       }
     }

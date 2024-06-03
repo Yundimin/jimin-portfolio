@@ -57,7 +57,7 @@ export function Skills() {
             <img src={typeorm} alt="typeorm" />
           </div>
         </div>
-        <div style={{ display: " flex" }}>
+        <div className="tool-community-box">
           <div className="tool-wrapper">
             <div className="tool-title">Tools</div>
             <div className="tool-img-box">
@@ -76,7 +76,7 @@ export function Skills() {
             </div>
           </div>
         </div>
-        <div style={{ display: "flex" }}>
+        <div className="mobile-deployment-box" style={{ display: "flex" }}>
           <div className="mobile-wrapper">
             <div className="mobile-title">Mobile App</div>
             <div className="mobile-img-box">

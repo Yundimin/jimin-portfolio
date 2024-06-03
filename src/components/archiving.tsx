@@ -16,7 +16,7 @@ export function Archiving() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/yundimin
+            github.com/yundimin
           </a>
 
           <div className="github-title">소스 코드 저장소입니다.</div>
@@ -36,7 +36,7 @@ export function Archiving() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              https://jminn.tistory.com
+              jminn.tistory.com
             </a>
           </p>
           <div className="tstory-title">
@@ -55,11 +55,7 @@ export function Archiving() {
       </div>
       <div className="portfolio-container">
         <div className="portfolio-title">
-          <img
-            src={portfolioImg}
-            alt="portfolioImg"
-            style={{ width: 60, height: 60 }}
-          ></img>
+          <img src={portfolioImg} alt="portfolioImg"></img>
           <div className="title-text">Portfolio</div>
         </div>
         <div className="portfolio-text-box">

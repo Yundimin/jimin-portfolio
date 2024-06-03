@@ -143,6 +143,7 @@ export const ContactWrapper = styled.div`
     .contact-box {
       .address-box {
         .address-title {
+          padding: 10px;
           font-size: 20px;
         }
 
@@ -169,6 +170,42 @@ export const ContactWrapper = styled.div`
 
           a {
             font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .title {
+      font-size: 40px;
+    }
+
+    .contact-box {
+      .address-box {
+        .address-title {
+          padding: 10px;
+          font-size: 15px;
+        }
+
+        .address-item {
+          .item-box {
+            .clipboard-text {
+              font-size: 17px;
+
+              img {
+                width: 23px;
+              }
+            }
+
+            img {
+              width: 100px;
+              cursor: pointer;
+            }
+          }
+
+          a {
+            font-size: 17px;
           }
         }
       }

@@ -100,7 +100,7 @@ export const ArchivingWrapper = styled.div`
 
   .portfolio-container {
     border-radius: 20px;
-    margin-top: 30px;
+    margin: 30px 10px;
     width: 80%;
     max-width: 1000px;
     height: fit-content;
@@ -112,6 +112,11 @@ export const ArchivingWrapper = styled.div`
     .portfolio-title {
       display: flex;
       padding: 35px;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
     }
 
     .title-text {
@@ -138,15 +143,16 @@ export const ArchivingWrapper = styled.div`
       font-size: 40px;
     }
     .archiving-container {
-      width: 80%;
+      padding: 10px;
+      width: auto;
       flex-direction: column;
       gap: 30px;
 
       .github-container {
         width: auto;
         img {
-          width: 200px;
-          height: 80px;
+          width: 150px;
+          height: 60px;
         }
 
         a {
@@ -172,8 +178,8 @@ export const ArchivingWrapper = styled.div`
       .tstory-container {
         width: auto;
         img {
-          width: 200px;
-          height: 60px;
+          width: 150px;
+          height: 45px;
         }
 
         a {
@@ -200,20 +206,27 @@ export const ArchivingWrapper = styled.div`
     }
 
     .portfolio-container {
+      width: auto;
       .portfolio-title {
         display: flex;
         padding: 35px;
+        flex-direction: column;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
       }
 
       .title-text {
-        margin-left: 20px;
-        font-size: 60px;
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 40px;
         font-weight: 600;
       }
 
       .portfolio-text-box {
-        margin-bottom: 30px;
-        margin-left: 30px;
+        margin: 0 30px 30px 30px;
         display: flex;
         flex-direction: column;
 

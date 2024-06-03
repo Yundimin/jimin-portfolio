@@ -158,6 +158,7 @@ export const ProjectWrapper = styled.div`
           .skills-img {
             display: flex;
             margin-top: 20px;
+            flex-wrap: wrap;
             img {
               width: 50px;
               height: 50px;
@@ -180,6 +181,7 @@ export const ProjectWrapper = styled.div`
 
     .project-container {
       gap: 50px;
+      padding: 20px;
 
       .project-title-container {
         .project-title {
@@ -200,50 +202,64 @@ export const ProjectWrapper = styled.div`
         .swiper-container {
           margin-top: 60px;
           width: 100%;
+
+          .swiper-button-prev {
+            left: -13px;
+          }
+
+          .swiper-button-next {
+            right: -13px;
+          }
         }
 
         .explain-container {
           .explain-title {
-            font-size: 18px;
+            font-size: 16px;
           }
 
           .function-box {
             .function-title {
-              font-size: 18px;
+              font-size: 16px;
             }
 
             ul {
               li {
-                font-size: 16px;
+                font-size: 15px;
               }
             }
           }
           .url-box {
             .url-title {
-              font-size: 18px;
+              font-size: 16px;
             }
 
             a {
-              font-size: 18px;
+              display: flex;
+              flex-wrap: wrap;
+              margin: auto;
+              font-size: 15px;
             }
           }
           .github-box {
             .github-title {
-              font-size: 18px;
+              font-size: 16px;
             }
 
             a {
-              font-size: 18px;
+              display: flex;
+              flex-wrap: wrap;
+              margin: auto;
+              font-size: 15px;
             }
           }
           .skills-box {
             .skills-title {
-              font-size: 18px;
+              font-size: 16px;
             }
             .skills-img {
               img {
-                width: 50px;
-                height: 50px;
+                width: 45px;
+                height: 45px;
               }
             }
           }

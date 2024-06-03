@@ -69,7 +69,7 @@ export function Project() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://github.com/Yundimin/jimin-portfolio
+                  Yundimin/jimin-portfolio
                 </a>
               </p>
             </div>
@@ -139,7 +139,7 @@ export function Project() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://github.com/Yundimin/my-portfolio/tree/master
+                  Yundimin/my-portfolio/tree/master
                 </a>
               </p>
             </div>
@@ -195,11 +195,11 @@ export function Project() {
               <div className="github-title">GitHub</div>
               <p>
                 <a
-                  href="https://jminn.tistory.com"
+                  href="https://github.com/Yundimin/instaclone-native/tree/master"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://github.com/Yundimin/instaclone-native/tree/master
+                  Yundimin/instaclone-native/tree/master
                 </a>
               </p>
             </div>
