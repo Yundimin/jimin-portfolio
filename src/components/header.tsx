@@ -1,9 +1,21 @@
 import { useState, useEffect } from "react";
 import { NavbarWrapper } from "../styles/headers.modules";
 import headerLogo from "../assets/header-logo.png";
+import hamburgerIcon from "../assets/hamburger.svg"; // 햄버거 아이콘 이미지 추가
+
+export const menuItems = [
+  { name: "Home", scrollTo: "home" },
+  { name: "ABOUT ME", scrollTo: "aboutme" },
+  { name: "SKILLS", scrollTo: "skills" },
+  { name: "ARCHIVING", scrollTo: "archiving" },
+  { name: "PROJECT", scrollTo: "project" },
+  { name: "HISTORY", scrollTo: "history" },
+  { name: "CONTACT", scrollTo: "contact" },
+];
 
 export function Header() {
   const [selectedItem, setSelectedItem] = useState("home");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleItemClick = (scrollTo: string) => {
     setSelectedItem(scrollTo);
@@ -14,17 +26,8 @@ export function Header() {
         element.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
+    setIsMenuOpen(false); // 메뉴 항목 클릭 시 메뉴 닫기
   };
-
-  const menuItems = [
-    { name: "Home", scrollTo: "home" },
-    { name: "ABOUT ME", scrollTo: "aboutme" },
-    { name: "SKILLS", scrollTo: "skills" },
-    { name: "ARCHIVING", scrollTo: "archiving" },
-    { name: "PROJECT", scrollTo: "project" },
-    { name: "HISTORY", scrollTo: "history" },
-    { name: "CONTACT", scrollTo: "contact" },
-  ];
 
   const handleScroll = () => {
     const offset = -200;
@@ -52,7 +55,14 @@ export function Header() {
     <NavbarWrapper>
       <div className="nav-box">
         <img src={headerLogo} alt="headerLogo" className="logo" />
-        <div className="menu-box">
+        <img
+          src={hamburgerIcon}
+          alt="Menu"
+          className="hamburger"
+          style={{ width: 40, height: 40 }}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        />
+        <div className={`menu-box ${isMenuOpen ? "open" : ""}`}>
           {menuItems.map((nav) => (
             <div
               key={nav.scrollTo}

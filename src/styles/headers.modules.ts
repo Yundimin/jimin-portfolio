@@ -16,19 +16,25 @@ export const NavbarWrapper = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .logo {
     width: 54px;
     height: 54px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: auto 20px;
     transition: transform 0.3s ease-in-out;
     &:hover {
       transform: scale(1.07);
     }
+  }
+
+  .hamburger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
   }
 
   .menu-box {
@@ -104,9 +110,55 @@ export const NavbarWrapper = styled.div`
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1000px) {
+    .menu-box {
+      .links {
+        font-size: 15px !important;
+        padding: 10px;
+      }
+    }
   }
 
   @media (max-width: 767px) {
+    .hamburger {
+      display: block;
+    }
+
+    .menu-box {
+      display: none;
+      position: absolute;
+      top: 100px;
+      width: 100%;
+      background-color: white;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+
+      &.open {
+        display: flex;
+        min-height: 500px;
+      }
+
+      .links {
+        margin: 10px 0;
+      }
+    }
+
+    .logo {
+      margin: auto 10px;
+    }
+
+    .hamburger {
+      margin-right: 10px;
+    }
+
+    .menu-box {
+      top: 100px;
+
+      .links {
+        margin: 5px 0;
+      }
+    }
   }
 `;

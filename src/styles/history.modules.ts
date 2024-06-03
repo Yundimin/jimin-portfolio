@@ -100,18 +100,18 @@ export const HistoryWrapper = styled.div`
 
           .history-text-box {
             .table-title {
-              font-size: 20px;
+              font-size: 18px;
               margin-bottom: 20px;
             }
             .table-position {
-              font-size: 18px;
+              font-size: 16px;
               margin-bottom: 20px;
             }
             .table-duration {
               margin-bottom: 20px;
             }
             .table-description {
-              font-size: 18px;
+              font-size: 13px;
               line-height: 30px;
             }
           }

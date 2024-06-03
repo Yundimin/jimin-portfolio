@@ -20,7 +20,6 @@ export const ContactWrapper = styled.div`
   .contact-box {
     width: 80%;
     max-width: 1400px;
-    min-width: 300px;
     height: 1000px;
     display: flex;
     flex-direction: row;
