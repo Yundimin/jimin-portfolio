@@ -14,6 +14,16 @@ import portfolioImg1 from "../assets/portfolio/portfolioImg1.png";
 import portfolioImg2 from "../assets/portfolio/portfolioImg2.png";
 import portfolioImg3 from "../assets/portfolio/portfolioImg3.png";
 import portfolioImg4 from "../assets/portfolio/portfolioImg4.png";
+import chooPage1 from "../assets/portfolio/choo-page1.png";
+import chooPage2 from "../assets/portfolio/choo-page2.png";
+import chooPage3 from "../assets/portfolio/choo-page3.png";
+import chooPage4 from "../assets/portfolio/choo-page4.png";
+import chooPage5 from "../assets/portfolio/choo-page5.png";
+import chooPage6 from "../assets/portfolio/choo-page6.png";
+import instaClone1 from "../assets/portfolio/insta-clone1.png";
+import instaClone2 from "../assets/portfolio/insta-clone2.png";
+import instaClone3 from "../assets/portfolio/insta-clone3.png";
+import instaClone4 from "../assets/portfolio/insta-clone4.png";
 import postgre from "../assets/backend/postgreSQL.png";
 import prisma from "../assets/backend/prisma.png";
 import graphql from "../assets/backend/graphql.png";
@@ -27,6 +37,17 @@ const portfolioImages = [
   portfolioImg4,
 ];
 
+const instaImages = [instaClone1, instaClone2, instaClone3, instaClone4];
+
+const chooImages = [
+  chooPage1,
+  chooPage2,
+  chooPage3,
+  chooPage4,
+  chooPage5,
+  chooPage6,
+];
+
 const portfolioText = "포트폴리오 용도로 제작한 웹사이트입니다.";
 const InstaCloneText = "강의를 통한 인스타그램 클론 앱";
 
@@ -37,7 +58,6 @@ export function Project() {
       <div className="project-container">
         <div className="project-title-container">
           <div className="project-title">나의 포트폴리오 사이트</div>
-          <div className="project-duration">2024.05 ~ 2024.05 (1명) </div>
         </div>
         <div className="project-swiper-container">
           <div className="explain-container">
@@ -106,7 +126,6 @@ export function Project() {
       <div className="project-container">
         <div className="project-title-container">
           <div className="project-title">외주 포트폴리오 사이트</div>
-          <div className="project-duration">2024.04 ~ 2024.06 (1명) </div>
         </div>
         <div className="project-swiper-container">
           <div className="explain-container">
@@ -123,11 +142,11 @@ export function Project() {
               <div className="url-title">URL</div>
               <p>
                 <a
-                  href="https://jminn.tistory.com"
+                  href="https://choo-page-b290f.web.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://jminn.tistory.com
+                  https://choo-page-b290f.web.app
                 </a>
               </p>
             </div>
@@ -162,11 +181,11 @@ export function Project() {
               navigation
               pagination={{ clickable: true }}
             >
-              {portfolioImages.map((image, index) => (
+              {chooImages.map((image, index) => (
                 <SwiperSlide key={index}>
                   <img
                     src={image}
-                    alt={`Portfolio${index + 1}`}
+                    alt={`chooImages${index + 1}`}
                     className="slide-img"
                   />
                 </SwiperSlide>
@@ -178,7 +197,6 @@ export function Project() {
       <div className="project-container">
         <div className="project-title-container">
           <div className="project-title">인스타그램 클론코딩</div>
-          <div className="project-duration">2024.01 ~ 2024.03 (1명) </div>
         </div>
         <div className="project-swiper-container">
           <div className="explain-container">
@@ -222,11 +240,11 @@ export function Project() {
               navigation
               pagination={{ clickable: true }}
             >
-              {portfolioImages.map((image, index) => (
+              {instaImages.map((image, index) => (
                 <SwiperSlide key={index}>
                   <img
                     src={image}
-                    alt={`Portfolio${index + 1}`}
+                    alt={`Insta${index + 1}`}
                     className="slide-img"
                   />
                 </SwiperSlide>
