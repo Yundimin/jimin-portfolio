@@ -67,7 +67,7 @@ export const TitleText = styled.div`
   opacity: 0;
   animation: ${revealAnimation} 0.5s ease forwards;
   animation-delay: 3.5s;
-  word-wrap: break-word;
+  word-break: keep-all;
   white-space: pre-wrap;
   text-align: start;
   margin-top: 50px;

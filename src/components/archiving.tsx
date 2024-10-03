@@ -4,6 +4,13 @@ import tstoryImg from "../assets/archiving/tstory.webp";
 import portfolioImg from "../assets/archiving/portfolio.png";
 
 export function Archiving() {
+  const goToNotion = (): void => {
+    window.open(
+      "https://like-overcoat-61c.notion.site/Yun-Jimin-0eac29aa494d477aa64c9b0ebdc13480",
+      "_blank"
+    );
+  };
+
   return (
     <ArchivingWrapper id="archiving">
       <div className="title">ARCHIVING</div>
@@ -53,7 +60,7 @@ export function Archiving() {
           </ul>
         </div>
       </div>
-      <div className="portfolio-container">
+      <div className="portfolio-container" onClick={goToNotion}>
         <div className="portfolio-title">
           <img src={portfolioImg} alt="portfolioImg"></img>
           <div className="title-text">Portfolio</div>

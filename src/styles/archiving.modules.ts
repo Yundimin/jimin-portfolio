@@ -9,6 +9,7 @@ export const ArchivingWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  word-break: keep-all;
 
   .title {
     font-size: 60px;
@@ -108,6 +109,15 @@ export const ArchivingWrapper = styled.div`
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    &:active {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
 
     .portfolio-title {
       display: flex;

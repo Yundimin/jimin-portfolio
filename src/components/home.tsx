@@ -5,7 +5,7 @@ import {
 } from "../styles/home.modules";
 
 export function Home() {
-  const titleInviteText = "Invite to My Portfolio Universe";
+  const titleInviteText = "Invitation to my Portfolio";
   return (
     <HomeWrapper id="home">
       <div className="title-container">

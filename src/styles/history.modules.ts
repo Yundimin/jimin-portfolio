@@ -9,6 +9,7 @@ export const HistoryWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  word-break: keep-all;
 
   .title {
     font-size: 60px;

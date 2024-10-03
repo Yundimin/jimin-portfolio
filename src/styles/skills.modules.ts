@@ -167,7 +167,6 @@ export const SkillsWrapper = styled.div`
         }
 
         img {
-          width: fit-content;
           height: 75px;
           margin: 5px;
           transition: transform 0.3s ease-in-out;
@@ -242,7 +241,6 @@ export const SkillsWrapper = styled.div`
         }
 
         img {
-          width: fit-content;
           height: 75px;
           margin: 5px;
           transition: transform 0.3s ease-in-out;
@@ -306,7 +304,6 @@ export const SkillsWrapper = styled.div`
           }
 
           img {
-            width: fit-content;
             height: 45px;
           }
         }
@@ -329,7 +326,6 @@ export const SkillsWrapper = styled.div`
           }
 
           img {
-            width: fit-content;
             height: 45px;
           }
         }

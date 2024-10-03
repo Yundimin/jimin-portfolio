@@ -41,6 +41,7 @@ export const AboutMeWrapper = styled.div`
       align-items: center;
       flex-direction: column;
       justify-content: space-between;
+      word-break: keep-all;
 
       .text-title {
         margin-top: 60px;
