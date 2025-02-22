@@ -73,11 +73,11 @@ export function Project() {
               <div className="url-title">URL</div>
               <p>
                 <a
-                  href="https://jminn.tistory.com"
+                  href="https://jimin-portfolio-d4557.web.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  https://jminn.tistory.com
+                  https://jimin-portfolio-d4557.web.app
                 </a>
               </p>
             </div>
