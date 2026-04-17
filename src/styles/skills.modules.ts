@@ -32,6 +32,10 @@ export const SkillsWrapper = styled.div`
     flex-direction: column;
     margin-bottom: 60px;
 
+    .compact-icon {
+      width: 50px;
+    }
+
     .front-end-wrapper {
       display: flex;
       border: 1px solid #ededed;

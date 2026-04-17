@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import { NavbarWrapper } from "../styles/headers.modules";
-import headerLogo from "../assets/header-logo.png";
-import hamburgerIcon from "../assets/hamburger.svg"; // 햄버거 아이콘 이미지 추가
+import { assets } from "../assets";
+
+const {
+  common: { headerLogo, hamburgerIcon },
+} = assets;
 
 export const menuItems = [
   { name: "Home", scrollTo: "home" },

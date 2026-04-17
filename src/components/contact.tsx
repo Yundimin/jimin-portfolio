@@ -1,8 +1,9 @@
 import { ContactWrapper } from "../styles/contact.modules";
-import gitLogoImg from "../assets/contact/github-logo.svg";
-import mailImg from "../assets/contact/mail-outline.svg";
-import blogImg from "../assets/contact/laptop-outline.svg";
-import clipboardImg from "../assets/contact/clipboard.svg";
+import { assets } from "../assets";
+
+const {
+  contact: { githubLogoIcon, mailIcon, blogIcon, clipboardIcon },
+} = assets;
 
 export function Contact() {
   const copyText = () => {
@@ -30,11 +31,11 @@ export function Contact() {
           <div className="address-item">
             <div className="item-box">
               <a href="mailto:ge72946@gmail.com">
-                <img src={mailImg} alt="MailImage" className="mail-svg" />
+                <img src={mailIcon} alt="MailImage" className="mail-svg" />
               </a>
               <div className="item-text">GMAIL</div>
               <div className="clipboard-text" onClick={copyText}>
-                <img src={clipboardImg} alt="clipboard" />
+                <img src={clipboardIcon} alt="clipboard" />
                 ge72946@gmail.com
               </div>
             </div>
@@ -46,7 +47,7 @@ export function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={gitLogoImg} alt="gitImage" className="git-svg" />
+                <img src={githubLogoIcon} alt="gitImage" className="git-svg" />
               </a>
               <div className="item-text">GITHUB</div>
               <a
@@ -65,7 +66,7 @@ export function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={blogImg} alt="blogImage" className="blog-svg" />
+                <img src={blogIcon} alt="blogImage" className="blog-svg" />
               </a>
               <div className="item-text">BLOG</div>
               <a

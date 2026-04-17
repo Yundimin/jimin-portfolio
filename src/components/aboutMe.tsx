@@ -1,5 +1,9 @@
 import { AboutMeWrapper } from "../styles/aboutMe.modules";
-import aboutMe from "../assets/aboutMe.jpeg";
+import { assets } from "../assets";
+
+const {
+  common: { aboutMeImage },
+} = assets;
 
 const text1 = "안녕하세요! 열정적인 소프트웨어 개발자 윤지민입니다.";
 const text2 =
@@ -14,7 +18,7 @@ export function AboutMe() {
     <AboutMeWrapper id="aboutme">
       <div className="img-text-container">
         <div className="image-container">
-          <img src={aboutMe} alt="aboutMe.jpeg"></img>
+          <img src={aboutMeImage} alt="aboutMe.jpeg"></img>
         </div>
         <div className="text-container">
           <div className="text-title">ABOUT ME</div>

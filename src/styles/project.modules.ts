@@ -70,6 +70,7 @@ export const ProjectWrapper = styled.div`
           transition: opacity 0.5s ease;
 
           .slide-img {
+            max-width: 500px;
             width: 80%;
           }
         }

@@ -1,258 +1,256 @@
 import { ProjectWrapper } from "../styles/project.modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y } from "swiper/modules";
+import { assets } from "../assets";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import reactImg from "../assets/frontend/React-icon.svg";
-import firebaseImg from "../assets/backend/firebase.png";
-import tsImg from "../assets/frontend/file-type-typescript-official.svg";
-import styledComponentImg from "../assets/frontend/styled-components.png";
-import bootstrap from "../assets/frontend/bootstrap.png";
-import portfolioImg1 from "../assets/portfolio/portfolioImg1.png";
-import portfolioImg2 from "../assets/portfolio/portfolioImg2.png";
-import portfolioImg3 from "../assets/portfolio/portfolioImg3.png";
-import portfolioImg4 from "../assets/portfolio/portfolioImg4.png";
-import chooPage1 from "../assets/portfolio/choo-page1.png";
-import chooPage2 from "../assets/portfolio/choo-page2.png";
-import chooPage3 from "../assets/portfolio/choo-page3.png";
-import chooPage4 from "../assets/portfolio/choo-page4.png";
-import chooPage5 from "../assets/portfolio/choo-page5.png";
-import chooPage6 from "../assets/portfolio/choo-page6.png";
-import instaClone1 from "../assets/portfolio/insta-clone1.png";
-import instaClone2 from "../assets/portfolio/insta-clone2.png";
-import instaClone3 from "../assets/portfolio/insta-clone3.png";
-import instaClone4 from "../assets/portfolio/insta-clone4.png";
-import postgre from "../assets/backend/postgreSQL.png";
-import prisma from "../assets/backend/prisma.png";
-import graphql from "../assets/backend/graphql.png";
-import node from "../assets/backend/node.png";
-import rn from "../assets/mobileApp/reactNative.png";
 
-const portfolioImages = [
-  portfolioImg1,
-  portfolioImg2,
-  portfolioImg3,
-  portfolioImg4,
+type Skill = {
+  src: string;
+  alt: string;
+};
+
+type ProjectItem = {
+  title: string;
+  description: string;
+  features: string[];
+  githubUrl: string;
+  githubLabel: string;
+  images: string[];
+  imageAltPrefix: string;
+  skills: Skill[];
+  url?: string;
+};
+
+const swiperModules = [Navigation, Pagination, A11y];
+
+const {
+  portfolio: {
+    amazonaImages,
+    denatalImages,
+    portfolioImages,
+    chooImages,
+    instaImages,
+  },
+  frontend: {
+    reactImg,
+    tsImg,
+    styledComponentsImg,
+    bootstrapImg,
+    nextjsImg,
+    tailwildImg,
+  },
+  backend: {
+    firebaseImg,
+    nodeImg,
+    postgreSqlImg,
+    prismaImg,
+    graphqlImg,
+    mongoImg,
+  },
+  mobile: { reactNativeImg },
+} = assets;
+
+const portfolioDescription = "포트폴리오 용도로 제작한 웹사이트입니다.";
+const instaCloneDescription = "강의를 통한 인스타그램 클론 앱";
+const amazonaDescription =
+  "이커머스 아마존을 참고하여 상품 탐색부터 장바구니, 결제, 주문 관리를 포함한 이커머스 웹 서비스를 개발했습니다.";
+const dentalDescription = "Vapi AI 기반 치과 예약 서비스";
+
+const projects: ProjectItem[] = [
+  {
+    title: "이커머스 웹 서비스",
+    description: amazonaDescription,
+    features: [
+      "상품조회, 카테고리/태그 기반 탐색, 검색 및 정렬 기능",
+      "장바구니, 주문 생성, 배송 정보 입력, 결제 완료",
+      "Stripe Webhook 및 PayPal 연동",
+      "NextAuth 기반",
+    ],
+    githubUrl: "https://github.com/Yundimin/my-amazon",
+    githubLabel: "Yundimin/my-amazon",
+    images: amazonaImages,
+    imageAltPrefix: "이커머스 웹 서비스 화면",
+    skills: [
+      { src: reactImg, alt: "React" },
+      { src: nextjsImg, alt: "Next JS" },
+      { src: tailwildImg, alt: "Tailwind CSS" },
+      { src: tsImg, alt: "TypeScript" },
+      { src: mongoImg, alt: "MongoDB" },
+    ],
+  },
+  {
+    title: "치과 예약 및 AI 상담 웹서비스",
+    description: dentalDescription,
+    features: ["Clerk 기반 로그인, 회원가입", "TanStack Query", "PostgreSQL"],
+    githubUrl: "https://github.com/Yundimin/dental-service",
+    githubLabel: "Yundimin/dental-service",
+    images: denatalImages,
+    imageAltPrefix: "치과 예약 웹 서비스 화면",
+    skills: [
+      { src: reactNativeImg, alt: "React Native" },
+      { src: nextjsImg, alt: "Next JS" },
+      { src: tailwildImg, alt: "Tailwind CSS" },
+      { src: postgreSqlImg, alt: "PostgreSQL" },
+      { src: tsImg, alt: "TypeScript" },
+    ],
+  },
+  {
+    title: "나의 포트폴리오 사이트",
+    description: portfolioDescription,
+    features: ["반응형 웹페이지", "Swiper 라이브러리 적용"],
+    url: "https://jimin-portfolio-d4557.web.app",
+    githubUrl: "https://github.com/Yundimin/jimin-portfolio",
+    githubLabel: "Yundimin/jimin-portfolio",
+    images: portfolioImages,
+    imageAltPrefix: "포트폴리오 사이트 화면",
+    skills: [
+      { src: reactImg, alt: "React" },
+      { src: tsImg, alt: "TypeScript" },
+      { src: styledComponentsImg, alt: "styled-components" },
+    ],
+  },
+  {
+    title: "외주 포트폴리오 사이트",
+    description: portfolioDescription,
+    features: [
+      "반응형 웹페이지",
+      "Bootstrap 라이브러리 적용",
+      "Swiper 라이브러리 적용",
+    ],
+    url: "https://choo-page-b290f.web.app",
+    githubUrl: "https://github.com/Yundimin/my-portfolio/tree/master",
+    githubLabel: "Yundimin/my-portfolio/tree/master",
+    images: chooImages,
+    imageAltPrefix: "외주 포트폴리오 사이트 화면",
+    skills: [
+      { src: reactImg, alt: "React" },
+      { src: tsImg, alt: "TypeScript" },
+      { src: bootstrapImg, alt: "Bootstrap" },
+      { src: styledComponentsImg, alt: "styled-components" },
+      { src: firebaseImg, alt: "Firebase" },
+    ],
+  },
+  {
+    title: "인스타그램 클론코딩",
+    description: instaCloneDescription,
+    features: [
+      "로그인, 회원가입, 피드, 검색",
+      "1:1 메시지 기능",
+      "React Native 사용",
+    ],
+    githubUrl: "https://github.com/Yundimin/instaclone-native/tree/master",
+    githubLabel: "Yundimin/instaclone-native/tree/master",
+    images: instaImages,
+    imageAltPrefix: "인스타그램 클론 앱 화면",
+    skills: [
+      { src: reactNativeImg, alt: "React Native" },
+      { src: nodeImg, alt: "Node.js" },
+      { src: prismaImg, alt: "Prisma" },
+      { src: graphqlImg, alt: "GraphQL" },
+      { src: postgreSqlImg, alt: "PostgreSQL" },
+    ],
+  },
 ];
 
-const instaImages = [instaClone1, instaClone2, instaClone3, instaClone4];
+function ProjectCarousel({
+  images,
+  imageAltPrefix,
+}: Pick<ProjectItem, "images" | "imageAltPrefix">) {
+  return (
+    <div className="swiper-container">
+      <Swiper
+        modules={swiperModules}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={image}>
+            <img
+              src={image}
+              alt={`${imageAltPrefix} ${index + 1}`}
+              className="slide-img"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+}
 
-const chooImages = [
-  chooPage1,
-  chooPage2,
-  chooPage3,
-  chooPage4,
-  chooPage5,
-  chooPage6,
-];
-
-const portfolioText = "포트폴리오 용도로 제작한 웹사이트입니다.";
-const InstaCloneText = "강의를 통한 인스타그램 클론 앱";
+function ProjectLinks({
+  url,
+  githubUrl,
+  githubLabel,
+}: Pick<ProjectItem, "url" | "githubUrl" | "githubLabel">) {
+  return (
+    <>
+      {url && (
+        <div className="url-box">
+          <div className="url-title">URL</div>
+          <p>
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              {url}
+            </a>
+          </p>
+        </div>
+      )}
+      <div className="github-box">
+        <div className="github-title">GitHub</div>
+        <p>
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+            {githubLabel}
+          </a>
+        </p>
+      </div>
+    </>
+  );
+}
 
 export function Project() {
   return (
     <ProjectWrapper id="project">
       <div className="title">PROJECT</div>
-      <div className="project-container">
-        <div className="project-title-container">
-          <div className="project-title">나의 포트폴리오 사이트</div>
-        </div>
-        <div className="project-swiper-container">
-          <div className="explain-container">
-            <div className="explain-title">{portfolioText}</div>
-            <div className="function-box">
-              <div className="function-title">주요 기능</div>
-              <ul>
-                <li>반응형 웹페이지</li>
-                <li>Swiper 라이브러리 적용</li>
-              </ul>
-            </div>
-            <div className="url-box">
-              <div className="url-title">URL</div>
-              <p>
-                <a
-                  href="https://jimin-portfolio-d4557.web.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://jimin-portfolio-d4557.web.app
-                </a>
-              </p>
-            </div>
-            <div className="github-box">
-              <div className="github-title">GitHub</div>
-              <p>
-                <a
-                  href="https://github.com/Yundimin/jimin-portfolio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Yundimin/jimin-portfolio
-                </a>
-              </p>
-            </div>
-            <div className="skills-box">
-              <div className="skills-title">기술 스택</div>
-              <div className="skills-img">
-                <img src={reactImg} alt="reactImg" />
-                <img src={tsImg} alt="tsImg" />
-                <img src={styledComponentImg} alt="styledComponentImg" />
+      {projects.map((project) => (
+        <div className="project-container" key={project.title}>
+          <div className="project-title-container">
+            <div className="project-title">{project.title}</div>
+          </div>
+          <div className="project-swiper-container">
+            <div className="explain-container">
+              <div className="explain-title">{project.description}</div>
+              <div className="function-box">
+                <div className="function-title">주요 기능</div>
+                <ul>
+                  {project.features.map((feature) => (
+                    <li key={feature}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
+              <ProjectLinks
+                url={project.url}
+                githubUrl={project.githubUrl}
+                githubLabel={project.githubLabel}
+              />
+              <div className="skills-box">
+                <div className="skills-title">기술 스택</div>
+                <div className="skills-img">
+                  {project.skills.map((skill) => (
+                    <img key={skill.alt} src={skill.src} alt={skill.alt} />
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="swiper-container">
-            <Swiper
-              modules={[Navigation, Pagination, A11y]}
-              spaceBetween={50}
-              slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
-            >
-              {portfolioImages.map((image, index) => (
-                <SwiperSlide key={index}>
-                  <img
-                    src={image}
-                    alt={`Portfolio${index + 1}`}
-                    className="slide-img"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <ProjectCarousel
+              images={project.images}
+              imageAltPrefix={project.imageAltPrefix}
+            />
           </div>
         </div>
-      </div>
-      <div className="project-container">
-        <div className="project-title-container">
-          <div className="project-title">외주 포트폴리오 사이트</div>
-        </div>
-        <div className="project-swiper-container">
-          <div className="explain-container">
-            <div className="explain-title">{portfolioText}</div>
-            <div className="function-box">
-              <div className="function-title">주요 기능</div>
-              <ul>
-                <li>반응형 웹페이지</li>
-                <li>Bootstrap 라이브러리 적용</li>
-                <li>Swiper 라이브러리 적용</li>
-              </ul>
-            </div>
-            <div className="url-box">
-              <div className="url-title">URL</div>
-              <p>
-                <a
-                  href="https://choo-page-b290f.web.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://choo-page-b290f.web.app
-                </a>
-              </p>
-            </div>
-            <div className="github-box">
-              <div className="github-title">GitHub</div>
-              <p>
-                <a
-                  href="https://github.com/Yundimin/my-portfolio/tree/master"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Yundimin/my-portfolio/tree/master
-                </a>
-              </p>
-            </div>
-            <div className="skills-box">
-              <div className="skills-title">기술 스택</div>
-              <div className="skills-img">
-                <img src={reactImg} alt="reactImg" />
-                <img src={tsImg} alt="tsImg" />
-                <img src={bootstrap} alt="bootstrapImg" />
-                <img src={styledComponentImg} alt="styledComponentImg" />
-                <img src={firebaseImg} alt="firebaseImg" />
-              </div>
-            </div>
-          </div>
-          <div className="swiper-container">
-            <Swiper
-              modules={[Navigation, Pagination, A11y]}
-              spaceBetween={50}
-              slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
-            >
-              {chooImages.map((image, index) => (
-                <SwiperSlide key={index}>
-                  <img
-                    src={image}
-                    alt={`chooImages${index + 1}`}
-                    className="slide-img"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      </div>
-      <div className="project-container">
-        <div className="project-title-container">
-          <div className="project-title">인스타그램 클론코딩</div>
-        </div>
-        <div className="project-swiper-container">
-          <div className="explain-container">
-            <div className="explain-title">{InstaCloneText}</div>
-            <div className="function-box">
-              <div className="function-title">주요 기능</div>
-              <ul>
-                <li>로그인, 회원가입, 피드, 검색</li>
-                <li> 1:1 메시지 기능</li>
-                <li>React Native 사용</li>
-              </ul>
-            </div>
-            <div className="github-box">
-              <div className="github-title">GitHub</div>
-              <p>
-                <a
-                  href="https://github.com/Yundimin/instaclone-native/tree/master"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Yundimin/instaclone-native/tree/master
-                </a>
-              </p>
-            </div>
-            <div className="skills-box">
-              <div className="skills-title">기술 스택</div>
-              <div className="skills-img">
-                <img src={rn} alt="rnImg" />
-                <img src={node} alt="nodeImg" />
-                <img src={prisma} alt="prismaImg" />
-                <img src={graphql} alt="graphqlImg" />
-                <img src={postgre} alt="postgreImg" />
-              </div>
-            </div>
-          </div>
-          <div className="swiper-container">
-            <Swiper
-              modules={[Navigation, Pagination, A11y]}
-              spaceBetween={50}
-              slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
-            >
-              {instaImages.map((image, index) => (
-                <SwiperSlide key={index}>
-                  <img
-                    src={image}
-                    alt={`Insta${index + 1}`}
-                    className="slide-img"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </div>
-      </div>
+      ))}
     </ProjectWrapper>
   );
 }

@@ -1,7 +1,9 @@
 import { HistoryWrapper } from "../styles/history.modules";
-import toonsImg from "../assets/history/toonsquare.png";
-import gmImg from "../assets/history/groupm.png";
-import univImg from "../assets/history/university.png";
+import { assets } from "../assets";
+
+const {
+  history: { toonsquareImg, groupMImg, universityImg },
+} = assets;
 
 const historyData = [
   {
@@ -10,7 +12,7 @@ const historyData = [
     duration: "2022.11 ~ 현재",
     description:
       "주식회사 TOONSQURE 개발팀에서 웹 프론트엔드,백엔드 작업을 하고 있습니다. \n Angular, Typescript, Ionic, Graphql 등을 사용했습니다.",
-    src: toonsImg,
+    src: toonsquareImg,
   },
   {
     title: "(주)Group M Korea 근무",
@@ -18,7 +20,7 @@ const historyData = [
     duration: "2022.1 ~ 2022.9",
     description:
       "주식회사 Group M Korea Mediacom에서 이커머스 플래너 인턴 업무를 하였습니다.",
-    src: gmImg,
+    src: groupMImg,
   },
   {
     title: "한국공학대학교",
@@ -26,7 +28,7 @@ const historyData = [
     duration: "2016.3 ~ 2023.2",
     description:
       "한국공학대학교에서 IT경영 전공과 벤처창업 부전공을 진학하였습니다.",
-    src: univImg,
+    src: universityImg,
   },
 ];
 

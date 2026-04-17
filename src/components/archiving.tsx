@@ -1,7 +1,9 @@
 import { ArchivingWrapper } from "../styles/archiving.modules";
-import githubImg from "../assets/archiving/GitHub_Logo.png";
-import tstoryImg from "../assets/archiving/tstory.webp";
-import portfolioImg from "../assets/archiving/portfolio.png";
+import { assets } from "../assets";
+
+const {
+  archiving: { githubArchivingImg, tstoryImg, portfolioArchivingImg },
+} = assets;
 
 export function Archiving() {
   const goToNotion = (): void => {
@@ -16,7 +18,7 @@ export function Archiving() {
       <div className="title">ARCHIVING</div>
       <div className="archiving-container">
         <div className="github-container">
-          <img src={githubImg} alt="github"></img>
+          <img src={githubArchivingImg} alt="github"></img>
 
           <a
             href="https://github.com/yundimin"
@@ -62,7 +64,7 @@ export function Archiving() {
       </div>
       <div className="portfolio-container" onClick={goToNotion}>
         <div className="portfolio-title">
-          <img src={portfolioImg} alt="portfolioImg"></img>
+          <img src={portfolioArchivingImg} alt="portfolioImg"></img>
           <div className="title-text">Portfolio</div>
         </div>
         <div className="portfolio-text-box">

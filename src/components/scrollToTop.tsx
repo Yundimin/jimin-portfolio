@@ -1,6 +1,10 @@
 import React, { useState } from "react";
-import arrowImg from "../assets/arrow-up.svg";
+import { assets } from "../assets";
 import { ScrollWrapper } from "../styles/scrollToTop.modules";
+
+const {
+  common: { arrowUpIcon },
+} = assets;
 
 const ScrollToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +32,7 @@ const ScrollToTop: React.FC = () => {
     <ScrollWrapper>
       {isVisible && (
         <button onClick={scrollToTop}>
-          <img src={arrowImg} alt="arrow" />
+          <img src={arrowUpIcon} alt="arrow" />
         </button>
       )}
     </ScrollWrapper>
