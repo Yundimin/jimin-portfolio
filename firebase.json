@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "jimin-portfolio-d4557",
     "public": "build",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
