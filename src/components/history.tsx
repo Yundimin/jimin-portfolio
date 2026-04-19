@@ -9,9 +9,9 @@ const historyData = [
   {
     title: "(주)TOONSQUARE 근무",
     position: "70% Frontend, 30% Backend",
-    duration: "2022.11 ~ 현재",
+    duration: "2022.11 ~ 2026.04",
     description:
-      "주식회사 TOONSQURE 개발팀에서 웹 프론트엔드,백엔드 작업을 하고 있습니다. \n Angular, Typescript, Ionic, Graphql 등을 사용했습니다.",
+      "주식회사 TOONSQURE 개발팀에서 웹 프론트엔드,백엔드 작업을 하고 있습니다. \n Angular, Typescript, Ionic, Graphql, Tailwind 등을 사용했습니다.",
     src: toonsquareImg,
   },
   {
